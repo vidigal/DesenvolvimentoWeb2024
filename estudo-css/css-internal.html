@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interno</title>
+
+    <style>
+        p {
+            color: red;
+        }
+
+        div {
+            background-color: blue;
+        }
+
+        .paragrafo-destaque {
+            color: rgb(228, 114, 14);
+        }
+        
+        #pParagrafoUnico {
+            color:aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Página sobre CSS Interno</h1>
+    
+    <p>Eu estou estudando CSS Interno</p>
+    <p>Esse é o segundo parágrafo</p>
+
+    <!-- O css interno da propriedade style sobreescreve o css já da tag p -->
+    <p style="color: darkmagenta;">coloquei depois do css</p>
+
+    <!-- Selecionando elemento pela classe -->
+    <p class="paragrafo-destaque">este é um parágrafo de destaque</p>
+
+
+    <div>está dentro da tag div</div>
+
+
+    <p class="paragrafo-destaque">este é um parágrafo de destaque</p>
+
+
+    <p class="paragrafo-destaque">este é um parágrafo de destaque</p>
+
+    <p id="pParagrafoUnico" class="paragrafo-destaque">Eu quero que esse parágrafo tenha um estilo único. E só ele vai ter esse estido.</p>
+
+</body>
+</html>
