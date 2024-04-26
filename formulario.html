@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Estou definindo o encoding da página como UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="ações, investimento, portifolio">
+    <meta name="description" content="Essa é a minha primeira página">
+    <meta name="author" content="Victor Vidigal Ribeiro">
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <title>Formulários em HTML</title>
+</head>
+<body>
+
+<h1>Formulários em HTML</h1>
+<p>Demonstração de formulários em HTML</p>
+
+<div>
+    <h3>Enviar email</h3>
+    <form action="index.html">
+        <label for="ipt_nome">Nome</label>
+        <input type="text" id="ipt_nome" name="ipt_nome">
+
+        <br><br>
+
+        <label for="ipt_email">Email</label>
+        <input type="email" id="ipt_email" name="ipt_email">
+
+        <br><br>
+        <input type="radio" id="ipt_masculino" value="msc" name="ipt_genero">
+        <label for="ipt_masculino">Masculino</label>
+        <br>
+        <input type="radio" id="ipt_feminino" value="fmn" name="ipt_genero">
+        <label for="ipt_feminino">Feminino</label>
+        <br>
+        <input type="radio" id="ipt_naoinformar" value="ni" name="ipt_genero">
+        <label for="ipt_naoinformar">Não informar</label>
+
+
+        <br><br>
+        <input type="checkbox" id="ipt_respostaemail">
+        <label for="ipt_respostaemail">Receber resposta por email</label><br>
+        <input type="checkbox" id="ipt_respostacelular">
+        <label for="ipt_respostacelular">Receber resposta por SMS</label>
+
+        <br><br>
+        <input type="radio" id="ipt_alta" value="msc" name="ipt_altura">
+        <label for="ipt_alta">Alta</label>
+        <br>
+        <input type="radio" id="ipt_baixa" value="fmn" name="ipt_altura">
+        <label for="ipt_baixa">Baixa</label>
+
+        <br><br>
+        <label for="ipt_mensagem">Mensagem</label>
+        <br>
+        <textarea type="text" id="ipt_mensagem" 
+                    name="txt_mensagem" cols="50" rows="10"></textarea>
+        <hr>
+
+        <br>
+        <label for="iptDataNascimento">Data de nascimento:</label>
+        <input type="date" id="iptDataNascimento" name="iptDataNascimento">
+        <br>
+        <label for="ip_password">Password obrigatório</label>
+        <input type="password" id="ip_password" required>
+        <br>
+        <input type="color" name="iptColor">
+        <br>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <input type="number" min="5" max="100" step="10" required>
+        <br><br>
+        <input type="reset" value="Cancelar">
+        <input type="submit" value="Enviar">
+
+    </form>
+</div>
+
+</body>
+</html>
